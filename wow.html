@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            height: 100vh; /* Adds space for scrolling */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Scroll Down to See the Animation</h1>
+    </div>
+
+    <div class="content wow animate__fadeInUp">
+        <h2>Hello, WOW.js is Working! 🎉</h2>
+    </div>
+
+    <div class="content wow animate__shakeX" data-wow-delay="1s">
+        <h2>This will shake with a 1-second delay!</h2>
+    </div>
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Initialize WOW.js -->
+    <script>
+        new WOW().init();
+               console.log(typeof WOW);
+    </script>
+</body>
+</html>
