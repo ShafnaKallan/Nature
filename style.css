@@ -205,7 +205,9 @@ align-items: center;
     height: 100%;
     position: relative;
   }
-
+.counter{
+  margin-top: 50px;
+}
   
   .projectFactsWrap{
       display: flex;
@@ -594,7 +596,7 @@ padding: 0px;
   align-items: center;
 }
 .float{
-  right: 80px;
+display: none;
 }
 }
 
