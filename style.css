@@ -88,9 +88,11 @@ body{
 
 
 .nav-part{
-   
-    padding: 20px;
+  
+    padding: 10px;
+  
 }
+
 .rain-container {
     position: absolute;
     top: 0;
@@ -176,7 +178,7 @@ align-items: center;
   border-radius: 20%;
   background-size: cover;
     margin-top: 100px;
-    background-image: url('./assets/_.jpeg');
+    background-image: url('./assets/A\ forest\ with\ wild\ animals\ and\ a\ forest\ with\ a\ forest\ background\ _\ Premium\ AI-generated\ image.jpeg');
 /* referring directly to the animation's @keyframe declaration */
 
 
@@ -365,28 +367,7 @@ align-items: center;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .plant-muted {
-      font-size: 55px;
-  }
-  .round-image1 , .round-image2{
-      width: 200px;
-      height: 250px;
 
-  }
-.services{
-padding: 0px;
-}
-.services-title p{
-padding-inline: 10px;
-}
-.about-section{
-padding: 0px;
-}
-.card-section{
-  flex-direction: column;
-  align-items: center}
-}
 .text-bold{
   font-weight: bold; 
   font-size: 20px;
@@ -439,6 +420,7 @@ body {
   justify-content: center;
   gap: var(--spacing-md);
 }
+
 .line {
   height: 1px;
   background-color: var(--primary-bg);
@@ -452,7 +434,7 @@ body {
 }
 .footer {
   width: 100vw;
- background-image: url(./assets/realistic-water-drop-with-ecosystem.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),  url('./assets/5335769.jpg');
  background-size: cover;
   padding: var(--spacing-lg) 0;
   margin-top: var(--spacing-xl);
@@ -524,3 +506,95 @@ body {
       text-align: center;
   }
 }
+
+.round-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 10px;
+  }
+  .round-card p{
+    margin-bottom: 5px;
+  }
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.outer-image {
+  display: block;
+}
+
+.inner-image {
+  top: 43%;
+  position: absolute;
+  /* width: 150px;
+  height: 180px; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.members-section{
+  padding: 40px;
+  margin-top: 30px;
+}
+.members-section h1{
+text-align: center;
+
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.my-float{
+	margin-top:16px;
+}
+
+@media screen and (max-width: 1180px) {
+  .banner-content h1{
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .plant-muted {
+      font-size: 55px;
+  }
+  .round-image1 , .round-image2{
+      width: 200px;
+      height: 250px;
+
+  }
+.services{
+padding: 0px;
+}
+.services-title p{
+padding-inline: 10px;
+}
+.about-section{
+padding: 0px;
+}
+.card-section{
+  flex-direction: column;
+  align-items: center
+}
+.round-card{
+ flex-direction: column;
+  align-items: center;
+}
+.float{
+  right: 80px;
+}
+}
+
